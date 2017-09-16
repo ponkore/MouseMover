@@ -17,6 +17,8 @@ namespace MouseMover
                 //   https://msdn.microsoft.com/ja-jp/library/cc410921.aspx
                 //   但し、ここによると mouse_move ではなく SendInput を使え、とのこと。
                 Win32.mouse_event(Win32.MOUSEEVENTF_MOVE, 10, 0, 0, 0);
+                System.Threading.Thread.Sleep(10);
+                Win32.mouse_event(Win32.MOUSEEVENTF_MOVE, -10, 0, 0, 0);
                 System.Threading.Thread.Sleep(IDLE_WAIT);
             }
         }

@@ -11,7 +11,7 @@ namespace MouseMover
         public static extern long SetCursorPos(int x, int y);
 
         // こっちを使う。
-        public const int MOUSEEVENTF_ABSOLUTE = 0x8000;
+        public const int MOUSEEVENTF_ABSOLUTE   = 0x8000;
         public const int MOUSEEVENTF_MOVE       = 0x0001;
         public const int MOUSEEVENTF_LEFTDOWN   = 0x0002;
         public const int MOUSEEVENTF_LEFTUP     = 0x0004;
